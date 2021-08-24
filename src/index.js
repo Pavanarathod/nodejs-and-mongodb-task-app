@@ -1,10 +1,10 @@
 // @ts-nocheck
 const express = require("express");
 const app = express();
-require("./db/mongoose");
 const userRoutes = require("./routes/userRoutes");
 const taskRoutes = require("./routes/taskRoutes");
-
+const connectDB = require("./db/mongoose");
+connectDB();
 app.use(express.json());
 
 app.use("/users", userRoutes);
