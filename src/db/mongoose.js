@@ -16,5 +16,3 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
-
-// mongodb+srv://pavandas:PavaDas@1996@cluster0.hcjjl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
